@@ -1,0 +1,28 @@
+/* The main stylesheet containing all the settings for the main screen of the pages */
+@import url(https://fonts.googleapis.com/css?family=Aclonica);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
+);
+body {
+    margin: 0;
+    height: 250vh;
+    font-family: 'Aclonica';
+    font-size: 22px;
+    background-color:whitesmoke;
+}
+
+/* Margins the text to the right, so the background imagery and sidebar are visible */
+div.main {
+    margin-left: 550px;
+}
+
+/* All h2 font sizes needed to be just a little bigger */
+h2 {
+    font-size: 32px;
+}
+
+
+/* All font logo's should be bigger than the normal text */
+.bigger_logos {
+    margin-left: 225px;
+    font-size: 144px;
+}
