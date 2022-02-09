@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 class ProfileController extends Controller
 {
-    public function show() {
-
+    /**
+     * @return view of the profile page
+     */
+    public function show(): view
+    {
         return view('profile');
-
     }
 }
