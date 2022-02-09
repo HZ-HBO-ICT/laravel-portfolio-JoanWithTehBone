@@ -1,14 +1,14 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-
-class WelcomeController
+class WelcomeController extends Controller
 {
-    public function show() {
-
+    /**
+     * @returns view of the of the Landing page
+     */
+    public function show()
+    {
         return view('welcome');
-
     }
 }

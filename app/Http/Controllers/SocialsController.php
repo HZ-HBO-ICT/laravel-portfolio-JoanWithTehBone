@@ -1,14 +1,14 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-
-class SocialsController
+class SocialsController extends Controller
 {
-    public function show() {
-
+    /**
+     * @returns view of the of the socials page
+     */
+    public function show()
+    {
         return view('socials');
-
     }
 }

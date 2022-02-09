@@ -1,14 +1,14 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-
-class DashboardController
+class DashboardController extends Controller
 {
-    public function show() {
-
+    /**
+     * @returns view of the of the dashboard
+     */
+    public function show()
+    {
         return view('dashboard');
-
     }
 }

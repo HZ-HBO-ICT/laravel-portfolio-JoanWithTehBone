@@ -1,14 +1,14 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-
-class BlogController
+class BlogController extends Controller
 {
-    public function show() {
-
+    /**
+     * @returns view of the of the blog
+     */
+    public function show()
+    {
         return view('blog');
-
     }
 }

@@ -1,14 +1,14 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-
-class FaqController
+class FaqController extends Controller
 {
-    public function show() {
-
+    /**
+     * @returns view of the of the FAQ
+     */
+    public function show()
+    {
         return view('faq');
-
     }
 }
