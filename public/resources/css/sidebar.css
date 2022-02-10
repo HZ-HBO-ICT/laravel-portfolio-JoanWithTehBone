@@ -1,0 +1,64 @@
+/* This Stylesheet contains all the tools to create the sidebar/navigation menu. */
+
+/* The main body and colour of the sidebar */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgba(150,170,235, 0.6);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* The creation of the different blocks inside of the sidebar */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Once you are on a page, the block of that page becomes highlighted */
+.sidebar a.active {
+    background-color: rgba(0,65,130, 0.6);
+    color: white;
+}
+
+/* Once you hover over one of the sidebar items, it will change colors */
+.sidebar a:hover:not(.active) {
+    background-color: rgba(85,85,85,0.6);
+    color: white;
+}
+
+.sidebar a.bottom {
+    position: fixed;
+    bottom: 0;
+
+}
+/* Set a parameter for the rest of the page, so it doesn't overlap with the sidebar */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* Setting the position of the screen and sidebar items [MAXIMUM] */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+
+/* Setting the position of the screen and sidebar items [MINIMUM] */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
