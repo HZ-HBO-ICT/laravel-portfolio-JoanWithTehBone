@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
+
 class FaqController extends Controller
 {
     /**
@@ -9,6 +11,10 @@ class FaqController extends Controller
      */
     public function show()
     {
-        return view('faq');
+        $posts = Faq::all();
+//        dd($posts[1] -> answer);
+        return view('faq', [
+            'posts' => $posts
+        ]);
     }
 }
